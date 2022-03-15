@@ -90,7 +90,7 @@ export default class App extends React.Component {
         for (let i = 0; i < 20; i++) {
             const idea = [];
             for (let j = 0; j < this.state.numCombine; j++) {
-                if (j == keywords.length) {
+                if (j === keywords.length) {
                     break;
                 }
                 let repick = true;
