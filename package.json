@@ -13,9 +13,10 @@
         "react-scripts": "5.0.0",
         "web-vitals": "^2.1.4"
     },
+    "homepage": "build",
     "scripts": {
         "start": "react-scripts start",
-        "build": "BUILD_PATH='./docs' react-scripts build",
+        "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
