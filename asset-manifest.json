@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/give-me-idea/static/css/main.b96ac4f1.css",
+    "main.css": "/give-me-idea/static/css/main.b37ff9ef.css",
     "main.js": "/give-me-idea/static/js/main.c0a6a9e3.js",
     "static/js/787.7e2ef179.chunk.js": "/give-me-idea/static/js/787.7e2ef179.chunk.js",
     "index.html": "/give-me-idea/index.html",
-    "main.b96ac4f1.css.map": "/give-me-idea/static/css/main.b96ac4f1.css.map",
+    "main.b37ff9ef.css.map": "/give-me-idea/static/css/main.b37ff9ef.css.map",
     "main.c0a6a9e3.js.map": "/give-me-idea/static/js/main.c0a6a9e3.js.map",
     "787.7e2ef179.chunk.js.map": "/give-me-idea/static/js/787.7e2ef179.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b96ac4f1.css",
+    "static/css/main.b37ff9ef.css",
     "static/js/main.c0a6a9e3.js"
   ]
 }
