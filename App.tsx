@@ -1,27 +1,32 @@
-// import { StatusBar } from "expo-status-bar";
-// import { StyleSheet, Text, SafeAreaView, View } from "react-native";
-// import BottomNavigation from "./components/BottomNavigation";
-// import ShuffleScreen from "./screens/ShuffleScreen";
-import { NativeBaseProvider, Box } from "native-base";
+import React from "react";
+import { NativeBaseProvider, extendTheme } from "native-base";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import MainScreen from "./screens/MainScreen";
+import { AppStackParamList } from "./components/types";
+
+const themeConfig = {
+  useSystemColorMode: false,
+  initialColorMode: "dark",
+};
+
+const AppStack = createNativeStackNavigator<AppStackParamList>();
 
 export default function App() {
+  // comment: can change to use color mode manager in the future
+  const theme = extendTheme({ themeConfig });
+
   return (
-    <NativeBaseProvider>
-      <Box>Hello World!</Box>
+    <NativeBaseProvider theme={theme}>
+      <NavigationContainer>
+        <AppStack.Navigator>
+          <AppStack.Screen
+            name="Main"
+            component={MainScreen}
+            options={{ headerShown: false }}
+          />
+        </AppStack.Navigator>
+      </NavigationContainer>
     </NativeBaseProvider>
-    // <SafeAreaView style={styles.container}>
-    //   <View style={styles.screen}>
-    //     <ShuffleScreen />
-    //   </View>
-    //   <View style={styles.bottomNavigation}>
-    //     <BottomNavigation />
-    //   </View>
-    // </SafeAreaView>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: { flexGrow: 1 },
-//   screen: { flexGrow: 1 },
-//   bottomNavigation: { flexGrow: 0 },
-// });
